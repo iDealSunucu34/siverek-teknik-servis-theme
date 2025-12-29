@@ -29,9 +29,10 @@
             megaMenu.setAttribute('aria-hidden', expanded);
         });
 
-        // Close mega menu when clicking outside
+        // Close mega menu when clicking outside (only if menu is open)
         document.addEventListener('click', function(e) {
-            if (!megaMenuToggle.contains(e.target) && !megaMenu.contains(e.target)) {
+            const isExpanded = megaMenuToggle.getAttribute('aria-expanded') === 'true';
+            if (isExpanded && !megaMenuToggle.contains(e.target) && !megaMenu.contains(e.target)) {
                 megaMenuToggle.setAttribute('aria-expanded', 'false');
                 megaMenu.setAttribute('aria-hidden', 'true');
             }

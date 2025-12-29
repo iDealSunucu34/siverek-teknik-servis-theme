@@ -167,8 +167,9 @@ add_action( 'send_headers', 'siverek_add_cache_headers' );
  * Preload key requests
  */
 function siverek_preload_resources() {
-    // Preload main CSS
-    echo '<link rel="preload" href="' . esc_url( SIVEREK_THEME_URI . '/assets/css/main.css' ) . '" as="style">' . "\n";
+    // Preload main CSS with proper onload handler
+    echo '<link rel="preload" href="' . esc_url( SIVEREK_THEME_URI . '/assets/css/main.css' ) . '" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">' . "\n";
+    echo '<noscript><link rel="stylesheet" href="' . esc_url( SIVEREK_THEME_URI . '/assets/css/main.css' ) . '"></noscript>' . "\n";
     
     // Preload main JS
     echo '<link rel="preload" href="' . esc_url( SIVEREK_THEME_URI . '/assets/js/navigation.js' ) . '" as="script">' . "\n";
