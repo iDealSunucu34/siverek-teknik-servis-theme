@@ -1,0 +1,175 @@
+/* Elementor Custom Styles */
+
+/* Reset Elementor defaults for better control */
+.elementor-widget-container {
+    margin-bottom: 0;
+}
+
+/* Elementor Section Padding */
+.elementor-section {
+    padding: 60px 0;
+}
+
+.elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 1280px;
+}
+
+/* Elementor Heading Widget */
+.elementor-heading-title {
+    margin: 0;
+}
+
+.elementor-widget-heading h1.elementor-heading-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.elementor-widget-heading h2.elementor-heading-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.elementor-widget-heading h3.elementor-heading-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+/* Elementor Button Widget */
+.elementor-button {
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.elementor-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Elementor Image Widget */
+.elementor-widget-image img {
+    border-radius: 8px;
+}
+
+/* Elementor Icon Box Widget */
+.elementor-icon-box-wrapper {
+    text-align: center;
+}
+
+.elementor-icon-box-icon {
+    margin-bottom: 20px;
+}
+
+.elementor-icon-box-title {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.elementor-icon-box-description {
+    color: var(--dark-color);
+}
+
+/* Elementor Counter Widget */
+.elementor-counter-title {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.elementor-counter-number-wrapper {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Elementor Progress Bar Widget */
+.elementor-progress-bar {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Elementor Testimonial Widget */
+.elementor-testimonial-wrapper {
+    background: var(--light-color);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Elementor Form Widget */
+.elementor-field-group input,
+.elementor-field-group textarea,
+.elementor-field-group select {
+    border: 2px solid var(--light-color);
+    border-radius: 5px;
+    padding: 12px 20px;
+    transition: border-color 0.3s ease;
+}
+
+.elementor-field-group input:focus,
+.elementor-field-group textarea:focus,
+.elementor-field-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.elementor-button.elementor-size-md {
+    padding: 12px 24px;
+}
+
+/* Elementor Custom Spacing */
+.elementor-top-section {
+    margin-bottom: 0;
+}
+
+/* Elementor Background Colors */
+.elementor-section.primary-bg {
+    background-color: var(--primary-color);
+}
+
+.elementor-section.secondary-bg {
+    background-color: var(--secondary-color);
+}
+
+.elementor-section.light-bg {
+    background-color: var(--light-color);
+}
+
+/* Elementor Column Gap */
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+    padding: 15px;
+}
+
+/* Elementor Responsive */
+@media screen and (max-width: 1024px) {
+    .elementor-section {
+        padding: 40px 0;
+    }
+
+    .elementor-widget-heading h1.elementor-heading-title {
+        font-size: 2rem;
+    }
+
+    .elementor-widget-heading h2.elementor-heading-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .elementor-section {
+        padding: 30px 0;
+    }
+
+    .elementor-widget-heading h1.elementor-heading-title {
+        font-size: 1.75rem;
+    }
+
+    .elementor-widget-heading h2.elementor-heading-title {
+        font-size: 1.5rem;
+    }
+
+    .elementor-widget-heading h3.elementor-heading-title {
+        font-size: 1.25rem;
+    }
+}

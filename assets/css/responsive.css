@@ -1,0 +1,243 @@
+/* Responsive Styles */
+
+/* Tablet Devices: 768px - 1023px */
+@media screen and (max-width: 1023px) {
+    .header-inner {
+        flex-wrap: wrap;
+    }
+
+    .main-navigation {
+        order: 4;
+        flex-basis: 100%;
+        display: none;
+    }
+
+    .main-navigation.toggled {
+        display: block;
+    }
+
+    .main-navigation ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .main-navigation li {
+        border-bottom: 1px solid var(--light-color);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .mega-menu {
+        position: static;
+        min-width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .mega-menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-widget-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .entry-title {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile Devices: 320px - 767px */
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .site-header {
+        position: relative;
+    }
+
+    .header-inner {
+        padding: 10px 0;
+    }
+
+    .header-contact {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        order: 3;
+    }
+
+    .phone-link,
+    .whatsapp-link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .phone-link .text,
+    .whatsapp-link .text {
+        display: none;
+    }
+
+    .mega-menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mega-menu {
+        padding: 20px;
+    }
+
+    .footer-widget-area {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-navigation ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .site-main {
+        padding: 40px 0;
+    }
+
+    .entry-title {
+        font-size: 1.75rem;
+    }
+
+    .entry-content {
+        font-size: 1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .brands-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-float-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Navigation adjustments for mobile */
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-previous,
+    .nav-next {
+        width: 100%;
+    }
+
+    .nav-previous a,
+    .nav-next a {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Large Desktop: 1280px+ */
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+
+    .mega-menu-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Elementor Specific Responsive */
+@media screen and (max-width: 1024px) {
+    .elementor-section-boxed > .elementor-container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .elementor-column {
+        width: 100% !important;
+    }
+
+    .elementor-section {
+        padding: 40px 0;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .custom-logo,
+    .brand-card-logo img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Landscape Orientation */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .site-header {
+        position: relative;
+    }
+
+    .whatsapp-float {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-float-button {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+    /* Can be implemented if needed */
+}

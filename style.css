@@ -1,0 +1,108 @@
+/*
+Theme Name: Siverek Yetkili Teknik Servis
+Theme URI: https://siverek-teknik-servis.com
+Author: Siverek Teknik Servis
+Author URI: https://siverek-teknik-servis.com
+Description: Profesyonel, modern ve yüksek performanslü WordPress teması. Elementor uyumlu, SEO optimize, responsive tasarım.
+Version: 1.0.0
+Requires at least: 5.8
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: siverek-teknik-servis
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, two-columns, elementor, seo-friendly, responsive-layout, accessibility-ready
+*/
+
+/* Critical CSS - Above the fold */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1e40af;
+    --secondary-color: #f59e0b;
+    --accent-color: #10b981;
+    --dark-color: #1f2937;
+    --light-color: #f3f4f6;
+    --white-color: #ffffff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--white-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+    background-color: var(--light-color);
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: var(--primary-color);
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Skip to content link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    padding: 8px;
+    z-index: 100000;
+}
+
+.skip-link:focus {
+    top: 0;
+}

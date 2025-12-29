@@ -1,0 +1,3 @@
+This is a placeholder for screenshot.png
+WordPress theme screenshot should be 1200x900 pixels
+Shows theme preview in WordPress admin
