@@ -19,10 +19,10 @@ get_header();
             <h1 class="hero-title">Siverek Yetkili Teknik Servis</h1>
             <p class="hero-subtitle">Tüm Beyaz Eşya Markalarında Profesyonel Teknik Servis Hizmeti</p>
             <div class="hero-cta">
-                <a href="tel:<?php echo esc_attr(siverek_get_phone_link()); ?>" class="btn btn-primary btn-large">
+                <a href="tel:<?php echo esc_attr(sts_get_phone_link()); ?>" class="btn btn-primary btn-large">
                     📞 Hemen Ara
                 </a>
-                <a href="<?php echo esc_url(siverek_get_whatsapp_link()); ?>" target="_blank" class="btn btn-secondary btn-large">
+                <a href="<?php echo esc_url(sts_get_whatsapp_link()); ?>" target="_blank" class="btn btn-secondary btn-large">
                     💬 WhatsApp ile Ulaş
                 </a>
             </div>
@@ -159,10 +159,10 @@ get_header();
             <h2 class="contact-cta-title">Hemen Arayın, Sorunlarınıza Anında Çözüm Bulalım!</h2>
             <p class="contact-cta-subtitle">7/24 Arıza İhbar Hattımızdan Bize Ulaşabilirsiniz</p>
             <div class="contact-cta-buttons">
-                <a href="tel:<?php echo esc_attr(siverek_get_phone_link()); ?>" class="btn btn-white btn-large">
-                    📞 <?php echo esc_html(siverek_get_phone()); ?>
+                <a href="tel:<?php echo esc_attr(sts_get_phone_link()); ?>" class="btn btn-white btn-large">
+                    📞 <?php echo esc_html(sts_get_phone()); ?>
                 </a>
-                <a href="<?php echo esc_url(siverek_get_whatsapp_link()); ?>" target="_blank" class="btn btn-outline-white btn-large">
+                <a href="<?php echo esc_url(sts_get_whatsapp_link()); ?>" target="_blank" class="btn btn-outline-white btn-large">
                     💬 WhatsApp ile Ulaş
                 </a>
             </div>
