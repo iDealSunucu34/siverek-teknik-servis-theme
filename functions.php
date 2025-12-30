@@ -46,11 +46,12 @@ add_action('after_setup_theme', 'siverek_theme_setup');
  * Enqueue Scripts and Styles
  */
 function siverek_enqueue_assets() {
-    // Main CSS
-    wp_enqueue_style('siverek-main', get_template_directory_uri() . '/assets/css/main.css', array(), '1.0.0');
+    // Main theme stylesheet (style.css)
+    wp_enqueue_style('siverek-style', get_stylesheet_uri(), array(), '1.0.0');
     
-    // Main JS
+    // Main JS (deferred for performance)
     wp_enqueue_script('siverek-main', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true);
+    wp_script_add_data('siverek-main', 'defer', true);
 }
 add_action('wp_enqueue_scripts', 'siverek_enqueue_assets');
 
@@ -89,6 +90,16 @@ function siverek_widgets_init() {
     ));
 }
 add_action('widgets_init', 'siverek_widgets_init');
+
+/**
+ * Theme options page
+ */
+require get_template_directory() . '/inc/theme-options.php';
+
+/**
+ * Template functions
+ */
+require get_template_directory() . '/inc/template-functions.php';
 
 /**
  * Custom template tags for this theme

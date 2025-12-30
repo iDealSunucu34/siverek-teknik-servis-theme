@@ -13,7 +13,18 @@ if (!defined('ABSPATH')) {
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Dynamic Theme Colors from Admin Panel -->
+    <!-- Note: Inline CSS is intentional for admin-configurable colors -->
+    <style>
+    :root {
+        --primary-color: <?php echo esc_attr(get_option('sts_primary_color', '#1e40af')); ?>;
+        --secondary-color: <?php echo esc_attr(get_option('sts_secondary_color', '#f59e0b')); ?>;
+    }
+    </style>
+    
     <?php wp_head(); ?>
 </head>
 
@@ -26,7 +37,7 @@ if (!defined('ABSPATH')) {
             <div class="site-branding">
                 <h1 class="site-title">
                     <a href="<?php echo esc_url(home_url('/')); ?>">
-                        <?php bloginfo('name'); ?>
+                        <?php echo sts_get_logo(); ?>
                     </a>
                 </h1>
                 <?php
@@ -78,8 +89,8 @@ if (!defined('ABSPATH')) {
             </nav>
 
             <div class="header-cta">
-                <a href="tel:<?php echo esc_attr(siverek_get_phone_link()); ?>" class="btn btn-primary">
-                    📞 <?php echo esc_html(siverek_get_phone()); ?>
+                <a href="tel:<?php echo esc_attr(sts_get_phone_link()); ?>" class="btn btn-primary">
+                    📞 <?php echo esc_html(sts_get_phone()); ?>
                 </a>
             </div>
         </div>
