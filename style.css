@@ -194,7 +194,7 @@ a:hover {
 }
 
 .mega-menu-toggle:hover {
-    background-color: color-mix(in srgb, var(--primary-color) 80%, black);
+    background-color: #1e3a8a;
 }
 
 .mega-menu-toggle .toggle-icon {
@@ -285,47 +285,49 @@ a:hover {
 
 /* 3D Primary Button */
 .btn-primary {
+    background: linear-gradient(180deg, var(--primary-color) 0%, #1534a3 100%);
     background: linear-gradient(180deg, var(--primary-color) 0%, color-mix(in srgb, var(--primary-color) 80%, black) 100%);
     color: var(--white-color);
     box-shadow: 
-        0 6px 0 color-mix(in srgb, var(--primary-color) 60%, black),
+        0 6px 0 #0f2980,
         0 8px 15px rgba(0,0,0,0.3);
     transform: translateY(0);
 }
 
 .btn-primary:hover {
     box-shadow: 
-        0 6px 0 color-mix(in srgb, var(--primary-color) 60%, black),
+        0 6px 0 #0f2980,
         0 10px 20px rgba(0,0,0,0.4);
 }
 
 .btn-primary:active {
     transform: translateY(4px);
     box-shadow: 
-        0 2px 0 color-mix(in srgb, var(--primary-color) 60%, black),
+        0 2px 0 #0f2980,
         0 3px 8px rgba(0,0,0,0.2);
 }
 
 /* 3D Secondary Button */
 .btn-secondary {
+    background: linear-gradient(180deg, var(--secondary-color) 0%, #c47e09 100%);
     background: linear-gradient(180deg, var(--secondary-color) 0%, color-mix(in srgb, var(--secondary-color) 80%, black) 100%);
     color: var(--white-color);
     box-shadow: 
-        0 6px 0 color-mix(in srgb, var(--secondary-color) 60%, black),
+        0 6px 0 #945f07,
         0 8px 15px rgba(0,0,0,0.3);
     transform: translateY(0);
 }
 
 .btn-secondary:hover {
     box-shadow: 
-        0 6px 0 color-mix(in srgb, var(--secondary-color) 60%, black),
+        0 6px 0 #945f07,
         0 10px 20px rgba(0,0,0,0.4);
 }
 
 .btn-secondary:active {
     transform: translateY(4px);
     box-shadow: 
-        0 2px 0 color-mix(in srgb, var(--secondary-color) 60%, black),
+        0 2px 0 #945f07,
         0 3px 8px rgba(0,0,0,0.2);
 }
 
@@ -630,7 +632,7 @@ section {
    Contact CTA Section
    ========================================== */
 .contact-cta-section {
-    background: linear-gradient(135deg, var(--secondary-color) 0%, color-mix(in srgb, var(--secondary-color) 80%, black) 100%);
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #d97706 100%);
     color: var(--white-color);
     text-align: center;
     padding: 100px 0;

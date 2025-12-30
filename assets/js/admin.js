@@ -16,8 +16,6 @@
         /**
          * Media Uploader
          */
-        let mediaUploader;
-        
         $('.sts-upload-button').on('click', function(e) {
             e.preventDefault();
             
@@ -27,14 +25,8 @@
             const previewDiv = $('#' + targetId + '_preview');
             const removeButton = button.siblings('.sts-remove-button');
             
-            // If the uploader object has already been created, reopen the dialog
-            if (mediaUploader) {
-                mediaUploader.open();
-                return;
-            }
-            
-            // Extend the wp.media object
-            mediaUploader = wp.media({
+            // Create a new media uploader instance for this button
+            const mediaUploader = wp.media({
                 title: 'Resim Seçin',
                 button: {
                     text: 'Resmi Kullan'

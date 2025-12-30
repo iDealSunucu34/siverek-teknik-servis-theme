@@ -50,7 +50,8 @@ function siverek_enqueue_assets() {
     wp_enqueue_style('siverek-style', get_stylesheet_uri(), array(), '1.0.0');
     
     // Main JS (deferred for performance)
-    wp_enqueue_script('siverek-main', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', array('strategy' => 'defer', 'in_footer' => true));
+    wp_enqueue_script('siverek-main', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true);
+    wp_script_add_data('siverek-main', 'defer', true);
 }
 add_action('wp_enqueue_scripts', 'siverek_enqueue_assets');
 

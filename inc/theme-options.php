@@ -101,7 +101,6 @@ function sts_render_theme_options_page() {
         <form method="post" action="options.php">
             <?php
             settings_fields('sts_theme_options');
-            wp_nonce_field('sts_theme_options_nonce', 'sts_theme_options_nonce_field');
             ?>
             
             <table class="form-table" role="presentation">
